@@ -1,0 +1,32 @@
+package BAEKJOON_ZOGUNMOON;
+
+import java.util.Scanner;
+
+public class no4 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+
+        if( ((A > 1000 && A < -1000)&&(A!=0)) && ((B > 1000 && B < -1000)&&(B!=0)) ){
+            System.out.println("숫자를 다시 입력하세요.");
+        }else{
+            if( A > 0 && B > 0){
+                //1사분면
+                System.out.println(1);
+            }else if( A < 0 && B > 0){
+                //2사분면
+                System.out.println(2);
+            }else if( A < 0 && B < 0){
+                //3사분면
+                System.out.println(3);
+            } else if (A > 0 && B < 0) {
+                //4사분면
+                System.out.println(4);
+            }
+        }
+
+    }
+}

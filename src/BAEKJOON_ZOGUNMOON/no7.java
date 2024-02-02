@@ -30,8 +30,9 @@ public class no7 {
                 //num1과 나머지 수를 비교한 값을 num2에 넣어 최댓값을 구한다.
                 int num1 = (A > B) ? A : B;
                 int num2 = (num1 > C) ? num1 : C;
-
-                System.out.println( num2 * 100 );
+                //max메소드를 통해서 쉽게 최댓값을 구할 수 있다.
+                int maxxxx = Math.max(Math.max(A, B), C);
+                System.out.println( maxxxx * 100 );
             }
         }
 

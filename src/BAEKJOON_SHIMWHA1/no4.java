@@ -1,0 +1,30 @@
+package BAEKJOON_SHIMWHA1;
+
+import java.util.Scanner;
+
+public class no4 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        String str = scan.nextLine();
+        //str을 char형 배열로 변경
+        char [] chars = str.toCharArray();
+
+        int gilee = str.length();
+
+        boolean bl = false;
+
+        for ( int i = 0 ; i < gilee ; i++ ){
+            if( chars[i] == chars[gilee-(i+1)] ){
+                bl = true;
+            }
+        }//for end
+
+        if( bl == true ){
+            System.out.println(1);
+        }else{
+            System.out.println(0);
+        }
+
+    }//main end
+}//class end

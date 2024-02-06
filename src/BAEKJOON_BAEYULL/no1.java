@@ -17,10 +17,11 @@ public class no1 {
             System.out.println("1~100까지만 입력하세요.");
         }else{
             for(int i = 0 ; i < N ; i++){
-                //입력한 N만큼 반복하면서, i가 0부터 N이 될 때까지 각 인덱스에 맞는값을 입력.
+                //입력한 N만큼 반복하면서,
+                // i가 0부터 N이 될 때까지 각 인덱스에 맞는값을 입력.
                 intarray[i] = sc.nextInt();
-            }
-        }
+            }//for end
+        }//if end
         //갯수를 알고싶은 수를 입력하는 변수 선언
         int V = sc.nextInt();
 
@@ -35,11 +36,11 @@ public class no1 {
                     count++;
                 }else{
                     continue;
-                }
-            }
-        }
+                }//if end
+            }//for end
+        }//else end
         //count 출력
         System.out.println(count);
 
-    }
-}
+    }//main end
+}//class end

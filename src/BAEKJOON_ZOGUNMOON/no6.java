@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class no6 {
     public static void main(String[] args) {
+        //Scanner 객체 생성
         Scanner sc = new Scanner(System.in);
-        //현재 시 입력 변수 ( 0 ~ 23 )
+        //현재 시 입력 변수 hour( 0 ~ 23 )
         int hour = sc.nextInt();
-        //현재 분 입력 변수( 0 ~ 59 )
+        //현재 분 입력 변수 minute( 0 ~ 59 )
         int minute = sc.nextInt();
-        //조리시간 입력 변수(분단위)
+        //조리시간 입력 변수 cook(분단위)
         int cook = sc.nextInt();
-        //현재 분과 조리시간(분)을 더한값을 저장하는 변수
+        //현재 분과 조리시간(분)을 더한값을 저장하는 변수 finalminute
         int finalminute = minute + cook;
         //finalminute을 60으로 나누어 조리의 시 단위를 구한다.
         int finalhour = finalminute / 60;

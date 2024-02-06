@@ -18,11 +18,11 @@ public class no5 {
             for(int i=1 ; i <= N_4 ; ++i){
                 //입력값을 4로 나눈값 만큼 long 출력.
                 System.out.print("long" + " ");
-            }
-        }
+            }//for end
+        }//if end
 
         //입력한 수의 배수만큼 long을 출력하고 나면 마지막으로 long int를 출력함.
         System.out.println("int");
 
-    }
-}
+    }//main end
+}//class end

@@ -26,7 +26,7 @@ public class no5 {
         if( (N < 1 || N > 100) || (M < 1 || M > 100)){
             //입력제한
             System.out.println("N과 M은 1부터 100까지만 입력하세요.");
-        }
+        }//if end
 
         do{
             //i,j,k를 입력받음.
@@ -45,7 +45,7 @@ public class no5 {
             karray[x] = k;
             //반복문 1회 시도 시 x값 증가.
             x++;
-        }while( x != M );
+        }while( x != M );//do-while end
 
         for(int y = 0 ; y < M ; y++){
             //시작하는 바구니 번호 = for문의 조건식으로 사용하기 위해 변수선언
@@ -55,15 +55,15 @@ public class no5 {
             //각 첫번째 바구니와 마지막 바구니까지  y값을 넣도록 설정
             for(int z = i_ary ; z <= j_ary ; z++){
                 mainarray[z] = karray[y];
-            }
+            }//for2 end
 
-        }
+        }//for end
 
         for(int v = 0 ; v < N ; v++){
             //바구니에 담긴 수들을 인덱스 0부터 크기까지 출력
             int num = mainarray[v];
             System.out.print(mainarray[v] + " ");
-        }
+        }//for end
 
-    }
-}
+    }//main end
+}//class end

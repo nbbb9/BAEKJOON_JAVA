@@ -15,7 +15,7 @@ public class no6 {
         //BufferReader를 쓰기위해선 throws IOExpertion을 꼭 추가해야한다.
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        
+        //BufferedReader에 대한 개념 공부 후 다시 풀어보기
 
-    }
-}
+    }//main end
+}//class end

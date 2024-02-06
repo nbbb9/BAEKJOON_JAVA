@@ -17,15 +17,15 @@ public class no4 {
             //9개의 수를 차례로 입력하고 배열에 저장함.
             int N = sc.nextInt();
             narray[i] = N;
-        }
+        }//for end
 
         for(int i = 0 ; i < 9 ; i++){
             //배열 인덱스 0부터8까지 max값보다 해당 인덱스의 값이 크다면
             //max의 값에 해당값을 대입함.
             if( max < narray[i] ) {
                 max = narray[i];
-            }
-        }
+            }//if end
+        }//for end
 
         for( int i = 0 ; i < 9 ; i++ ){
             //위에서 최댓값을 찾았기 때문에 인덱스 0부터 max값과 같은지 비교
@@ -35,12 +35,12 @@ public class no4 {
                 count++;
             }else{
                 break;
-            }
-        }
+            }//else end
+        }//for end
 
         System.out.println(max);
         //count된 수는 최댓값이 있는 순번의 바로 전 까지이므로 1을 더함.
         System.out.println(count+1);
 
-    }
-}
+    }//main end
+}//class end

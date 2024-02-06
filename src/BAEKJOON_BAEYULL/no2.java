@@ -20,8 +20,8 @@ public class no2 {
             for(int i = 0 ; i < N ; i++){
                 //입력한 N만큼 반복하면서, i가 0부터 N이 될 때까지 각 인덱스에 맞는값을 입력.
                 intarray[i] = sc.nextInt();
-            }
-        }
+            }//for end
+        }//else end
 
         for(int i = 0 ; i < N ; i++){
             //N까지 반복문을 돌면서 0부터 N번까지의 각 인덱스의 값과
@@ -30,8 +30,8 @@ public class no2 {
                 System.out.printf(intarray[i] + " ");
             }else{
                 continue;
-            }
-        }
+            }//else end
+        }//for end
 
-    }
-}
+    }//main end
+}//class end

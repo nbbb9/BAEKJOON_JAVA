@@ -18,7 +18,7 @@ public class no8 {
             int num = scan.nextInt();
             //입력값을 42로 나눈 나머지를 numary에 저장한다.
             numary[i] = num % 42;
-        }
+        }//for end
 
         //이중 for문을 사용해 하나의 인덱스 값을 전체 배열의 값들과 비교한다.
         //bl변수의 초기값을 false로 설정한 후 2번째 for문에서 비교한 결과가 나온다면 bl을 true로 바꾼 후 종료하고,
@@ -30,14 +30,14 @@ public class no8 {
                 if (numary[i] == numary[j]) {
                     bl = true;
                     break;
-                }
-            }
+                }//if end
+            }//for2 end
             if (bl == false) {
                 count++;
-            }
-        }
+            }//if end
+        }//for end
         //결과값 출력.
         System.out.println(count);
 
-    }
-}
+    }//main end
+}//class end

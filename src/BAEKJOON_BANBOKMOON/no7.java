@@ -23,13 +23,14 @@ public class no7 {
             if( A <= 0 || B >= 10  ){
                 //A, B의 입력 제한조건
                 System.out.println("두 수를 다시 입력하세요.");
-            }
+            }//if end
 
-        }
+        }//for end
+
         for(int i = 0 ; i < T ; i++){
             //배열의 0번 인덱스부터 N번까지 A + B의 값 대입
             System.out.println("Case #" + (i+1) + ": " + intarray[i]);
-        }
+        }//for end
 
-    }
-}
+    }//main end
+}//class end

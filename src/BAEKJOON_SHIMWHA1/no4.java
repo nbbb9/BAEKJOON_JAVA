@@ -3,6 +3,7 @@ package BAEKJOON_SHIMWHA1;
 import java.util.Scanner;
 
 public class no4 {
+    //해결 안됨
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -24,7 +25,7 @@ public class no4 {
             System.out.println(1);
         }else{
             System.out.println(0);
-        }
+        }//if end
 
     }//main end
 }//class end

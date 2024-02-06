@@ -3,11 +3,10 @@ package BAEKJOON_BANBOKMOON;
 import java.util.Scanner;
 
 public class no8 {
-
     public static void main(String[] args) {
         //Scanner 객체 생성
         Scanner sc = new Scanner(System.in);
-        //테스트 케이스의 개수 저장 변수
+        //테스트 케이스의 개수 저장 변수 T
         int T = sc.nextInt();
         //두개의 입력값을 받을 변수 2가지 선언
         int A, B;
@@ -30,15 +29,14 @@ public class no8 {
             if( (A < 0 || A > 10) || (B < 0 || B > 10) ){
                 //A, B의 입력 제한조건
                 System.out.println("두 수를 다시 입력하세요.");
-            }
+            }//if end
 
-        }
+        }//for end
 
         for(int i = 0 ; i < T ; i++){
             //배열의 0번 인덱스부터 N번까지 A + B의 값 대입
             System.out.println("Case #" + (i+1) + ": " + A_array[i] + " + " + B_array[i] + " = " + intarray[i] );
-        }
+        }//for end
 
-    }
-
-}
+    }//main end
+}//class end

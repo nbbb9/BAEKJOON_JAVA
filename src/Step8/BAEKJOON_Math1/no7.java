@@ -6,34 +6,25 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class no7 {
-    //문제는 풀었지만 시간초과 발생...해결이 안됨...
     public static void main(String[] args) throws IOException {
-        //BufferesReader 객체 생성
+        //BufferedReader 객체 생성
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        StringTokenizer st = new StringTokenizer(reader.readLine(), " ");
-
+        //StringTokenizer 객체 생성
+        StringTokenizer st = new StringTokenizer(reader.readLine());
+        //각각 A,B,V를 입력받는 변수.
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
         int V = Integer.parseInt(st.nextToken());
+        //(V-B)의 이유 : '낮에 정점에 도달하면 미끄러지지 않음'. 그냥 V/(A-B)를 해버리면, 도달하고나서도 내려간다는 조건이 생긴다.
+        int day = (V - B) / (A - B);
+        //근데 만약, 두가지를 나눈 값이 딱 떨어지지 않는다면, 어짜피 나머지이므로 몫으로 나온 날의 다음날에는 무조건 정점을 넘는다.
+        //때문에 day++를 수행.
+        if ((V - B) % (A - B) != 0) {
+            day++;
+        }//if end
+        System.out.println(day);
 
-        int dayClimb = A - B;
-        int dayCount = 0;
-        int length = 0;
-
-        int testday = 0;
-
-        if( dayClimb != 1 ){
-            testday = V/dayClimb;
-            testday += 1;
-        }else{
-            testday = (V/dayClimb) -1;
-        }
-
-
-        System.out.println(testday);
-
-
+        //아래는 시도했던게 아까워서 남겨둠.
         //A는 V보다 무조건 작다는 조건은 문제에 명시되어있으므로
         //코드상에서 구현하지 않아도 됨.
 //        if( A > V ){
@@ -69,6 +60,5 @@ public class no7 {
 //        }while(bl == false);
 
         //System.out.println(dayCount);
-
     }//main end
 }//class end

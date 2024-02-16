@@ -1,5 +1,5 @@
 package Step9.BAEKJOON_DivisorMultiplePrimeNumbers;
-
+//9단계부터 쉬운건 주석처리 안함.
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,20 +19,25 @@ public class no1 {
             if( x == 0 && y == 0 ){
                 System.exit(0);
             }//if end
+            //2번풀이 3항연산자 활용
+            String result = (x < y) ? (y % x == 0) ? "factor" : "neither" : ( x % y == 0 ) ? "multiple" : "neither";
 
-            if( x < y ){
-                if( y % x == 0 ){
-                    System.out.println("factor");
-                }else{
-                    System.out.println("neither");
-                }
-            }else{
-                if( x % y == 0 ){
-                    System.out.println("multiple");
-                }else{
-                    System.out.println("neither");
-                }
-            }
+            System.out.println(result);
+
+            //1번 풀이
+//            if( x < y ){
+//                if( y % x == 0 ){
+//                    System.out.println("factor");
+//                }else{
+//                    System.out.println("neither");
+//                }
+//            }else{
+//                if( x % y == 0 ){
+//                    System.out.println("multiple");
+//                }else{
+//                    System.out.println("neither");
+//                }
+//            }
 
         }//while end
     }//main end

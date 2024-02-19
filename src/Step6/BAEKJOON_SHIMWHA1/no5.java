@@ -1,33 +1,28 @@
 package Step6.BAEKJOON_SHIMWHA1;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class no5 {
-    public static void main(String[] args) {
-        //Scanner 객체 생성
-        Scanner scan = new Scanner(System.in);
-        String str = scan.nextLine();
-        char [] chars = str.toCharArray();
-        char [] test = new char[str.length()];
-        //
-        int count = 0;
+    public static void main(String[] args) throws IOException {
 
-        int [] countary = new int[100];
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-//        for( int i = 0 ; i < str.length() ; i++ ){
-//            test[i] = chars[i];
-//        }
+        int[] ary = new int[26];
 
-        //이거 아님.;,.....키르나ㅣㅁ의ㅏㄴ;ㅣㅇ라ㅡㅁㄷㄴ란ㄹ
-        for(int i = 0 ; i < str.length() ; i++){
-            for(int j = i+1 ; i < str.length() ; j++){
-                if(chars[i] == chars[j]){
-                    count++;
-                    countary[i] = count;
-                }//if end
-            }//for2 end
+        String str = reader.readLine();
 
-        }//for end
+        for( int i = 0 ;  i < str.length() ; i++){
+            if (65 <= str.charAt(i) && str.charAt(i) <= 90) { // 대문자 범위
+                ary[str.charAt(i) - 65]++;	// 해당 인덱스의 값 1 증가
+            }
 
-    }
-}
+            else {	// 소문자 범위
+                ary[str.charAt(i) - 97]++;
+            }
+        }
+
+    }//main end
+}//class end

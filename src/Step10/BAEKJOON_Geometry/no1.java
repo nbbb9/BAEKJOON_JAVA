@@ -12,7 +12,7 @@ public class no1 {
         int A = Integer.parseInt(reader.readLine());
         //가로길이를 입력받는 변수 B
         int B = Integer.parseInt(reader.readLine());
-
+        //두 길이를 곱하면 결과값 출력
         System.out.println(A * B);
     }//main end
 }//class end

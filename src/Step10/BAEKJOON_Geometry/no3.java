@@ -28,15 +28,12 @@ public class no3 {
         //각 리스트에 값이 올바르게 들어갔는지 테스트하기 위한 코드
         //System.out.println(X);
         //System.out.println(Y);
-
         //각각의 변수에 Find메서드를 통한 값 저장
         int xtemp = Find(X);
         int ytemp = Find(Y);
         //결과값 출력
         System.out.println(xtemp + " " + ytemp);
-
     }//main end
-
     public static int Find(List<Integer> list){//각 리스트에서 짝지어지지 않은 값을 찾기위한 메소드
         //리스트의 0번 인덱스의 값을 temp에 넣는다.
         int temp = list.get(0);
@@ -55,5 +52,4 @@ public class no3 {
         }//if-else end
         return temp;
     }//method Find end
-
 }//class end

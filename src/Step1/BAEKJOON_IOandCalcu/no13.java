@@ -1,4 +1,4 @@
-package Step1.BAEKJOON;
+package Step1.BAEKJOON_IOandCalcu;
 
 public class no13 {
     public static void main(String[] args) {

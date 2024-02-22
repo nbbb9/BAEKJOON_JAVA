@@ -1,4 +1,4 @@
-package Step1.BAEKJOON;
+package Step1.BAEKJOON_IOandCalcu;
 
 import java.util.Scanner;
 
@@ -16,5 +16,5 @@ public class no9 {
         System.out.println((A*B)%C);
         System.out.println(((A%C)*(B%C))%C);
 
-    }
-}
+    }//main end
+}//class end

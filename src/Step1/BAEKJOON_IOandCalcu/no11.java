@@ -1,4 +1,4 @@
-package Step1.BAEKJOON;
+package Step1.BAEKJOON_IOandCalcu;
 
 import java.util.Scanner;
 

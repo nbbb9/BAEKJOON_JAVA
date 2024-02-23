@@ -15,5 +15,5 @@ public class no11 {
         long C = Long.parseLong(numbers[2]);
         //3개의 값을 더한다.
         System.out.println(A+B+C);
-    }
-}
+    }//main end
+}//class end

@@ -13,7 +13,6 @@ public class no10 {
         double[] array = new double[N];
         //조작된 점수의 총합을 구하기 위한 변수 sum
         double sum = 0;
-
         for(int i = 0; i < N ; i++){
             //우선 과목의 개수만큼 원래 점수를 입력하여 배열에 저장한다.
             array[i] = scan.nextDouble();
@@ -41,6 +40,5 @@ public class no10 {
         double avg = sum / N;
         //avg 출력
         System.out.println(avg);
-
     }//main end
 }//class end

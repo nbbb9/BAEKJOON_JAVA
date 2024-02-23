@@ -8,5 +8,5 @@ public class no12 {
         System.out.println("(  /  )");
         System.out.println(" \\(__)|");
 
-    }
-}
+    }//main end
+}//class end

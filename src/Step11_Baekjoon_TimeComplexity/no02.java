@@ -9,7 +9,7 @@ public class no02 {
 //        MenOfPassion(A[], n) {
 //            sum = 0;
 //            for i = 1 to n
-//            sum = sum + A[i]; # 코드1
+//              sum = sum + A[i]; # 코드1
 //            return sum;
 //        }
         //O(n)의 시간 복잡도.

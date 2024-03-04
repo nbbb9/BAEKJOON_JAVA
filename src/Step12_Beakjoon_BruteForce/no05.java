@@ -10,6 +10,14 @@ public class no05 {
 
         int N = Integer.parseInt(reader.readLine());
 
+        reader.close();
+
+        int first = 666;
+
+
+
+
+
         
     }//main end
 }//class end

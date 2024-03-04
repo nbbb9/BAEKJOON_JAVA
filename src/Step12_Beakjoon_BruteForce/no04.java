@@ -27,8 +27,6 @@ public class no04 {
         }//for end
         //수정해야할 타일의 개수를 계산하기 위한 변수 count
         int count = 0;
-        //
-        boolean temp;
         //각 행의 첫번째 값(j==0)일 때는 위의 값과 비교하고 다음차례에 비교하면 되기때문에
         //j는 1부터 시작
         for(int i = 0 ; i < 8; i++){

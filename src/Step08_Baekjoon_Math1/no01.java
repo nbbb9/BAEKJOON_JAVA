@@ -13,6 +13,7 @@ public class no01 {
         String N = st.nextToken();
         //진법을 입력받는 변수 B
         int B = Integer.parseInt(st.nextToken());
+        reader.close();
         //결과값을 저장할 변수 result
         int result = 0;
         //진법계산을 위해 곱할 수를 저장할 변수 cnt

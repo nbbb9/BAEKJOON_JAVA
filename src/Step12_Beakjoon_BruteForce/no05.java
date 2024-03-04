@@ -13,11 +13,5 @@ public class no05 {
         reader.close();
 
         int first = 666;
-
-
-
-
-
-        
     }//main end
 }//class end

@@ -26,7 +26,7 @@ public class no07 {
     }//main end
 
     public static boolean checkGroup(String str){
-        //각 알파벳의 개수만큼 true, false를 저장하는 배옇 check.
+        //각 알파벳의 개수만큼 true, false를 저장하는 배열 check.
         //각 알파벳의 등장여부(?)를 알 수 있다. 불린형 배열의 초기값은 false
         boolean[] check = new boolean[26];
         //비교중인 문자말고 이전에 존재하는 알파벳을 저장하기 위한 변수 prev

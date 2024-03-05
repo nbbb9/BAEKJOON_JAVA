@@ -26,8 +26,9 @@ public class no01 {
             char c = N.charAt(i);
             //만약 입력값이 'A' 와 'Z'사이일 경우
             if( c >= 'A' && c <= 'Z' ){
-                //아스키코드로 계산하지않고 정수형으로 계산하기위해 'A'를 빼고 문제에서 주어진 10을 더해 36진법중 어떤 수인지 구한다.
-                //그다음 36의 n승을 곱한 후 result에 저장한다.
+                //아스키코드로 계산하지않고 정수형으로 계산하기위해
+                //'A' 또는 65을 빼고 문제에서 주어진 10을 더해 B진법중 어떤 수인지 구한다.
+                //그 다음 B의 n승(cnt)을 곱한 후 result에 더한다.
                 result += ( c - 'A' + 10 ) * cnt;
             }else{
                 //char형을 int형으로 보면 아스키코드값이 나오므로
@@ -40,6 +41,5 @@ public class no01 {
         }//for end
         //결과값 출력
         System.out.println(result);
-
     }//main end
 }//class end

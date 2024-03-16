@@ -10,7 +10,7 @@ public class no02 {
         int N = Integer.parseInt(reader.readLine());
         //결과값을 저장하는 변수 result
         int result = 0;
-        //0부터 N까지 모두 돌면서 N의 가장 생성자를 계산하고 찾음.
+        //0부터 N까지 모두 돌면서 N의 가장 작은 생성자를 계산하고 찾음.
         for(int i = 0 ; i < N ; i++){
             //0부터 N까지 도는 값을 저장하는 저장하는 변수 num
             int num =  i;

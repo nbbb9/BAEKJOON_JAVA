@@ -34,14 +34,15 @@ public class no07 {
         System.out.println();
 
         //우선 x먼저 정렬
-//        for(int i = 1 ; i < x.size() ; i++){
-//            System.out.println("Debug >>> Start X sort " + i );
-//            int temp = x.get(i-1);
-//            if(x.get(i) < temp){
-//                x.add(i-1, x.get(i));
-//                x.add(i, temp);
-//            }//if end
-//        }//for end
+        System.out.println("Debug >>> Start X sort ");
+        for(int i = 0 ; i < N ; i++){
+            System.out.println("Debug >>> index : " + i );
+            int temp = x.get(i-1);
+            if(x.get(i) < temp){
+                x.add(i-1, x.get(i));
+                x.add(i, temp);
+            }//if end
+        }//for end
 
 
         System.out.println("Debug >>> see XArray");

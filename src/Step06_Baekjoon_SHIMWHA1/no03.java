@@ -21,7 +21,7 @@ public class no03 {
             System.out.println();
         }//for end
         //감소하는 별찍기
-        //N-1부터 수행하여 역순으로 진행한다.
+        //N-1부터 수행하여 역순으로 진행한다.x
         for(int i = N-1; i >= 0 ; i--) {
             //역순으로 진행하므로, 증가별찍기와 로직이 같다.
             for(int j = 0; j < N-i; j++) {

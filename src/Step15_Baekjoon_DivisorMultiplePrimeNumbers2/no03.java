@@ -5,21 +5,25 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class no01 {
+public class no03 {
     public static void main(String[] args) throws IOException {
-        //유클리드 호제법 >> https://velog.io/@yerin4847/W1-%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C-%ED%98%B8%EC%A0%9C%EB%B2%95
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st;
-        int T = Integer.parseInt(br.readLine());
-        for(int i = 0; i < T; i++) {
-            st = new StringTokenizer(br.readLine());
-            int A = Integer.parseInt(st.nextToken());
-            int B = Integer.parseInt(st.nextToken());
-            int gcd = gcd(A, B); // 최대공약수 구하기
-            int lcm = A * B / gcd; // 최소공배수 구하기
-            System.out.println(lcm);
-        }//for end
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        int A = Integer.parseInt(st.nextToken());
+        int B = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine(), " ");
+        int C = Integer.parseInt(st.nextToken());
+        int D = Integer.parseInt(st.nextToken());
         br.close();
+        int gcd = gcd(B, D); // 최대공약수 구하기
+        int lcm = B * D / gcd; // 최소공배수 구하기
+        //분모를 통분했으므로, 분자도 동일하게 계산
+        int result = (A*(lcm/B)) + (C*(lcm/D));
+        //기약분수로 만들어야함. 분자,분모의 최대공약수로 각각 나누면, 기약분수가 성립
+        gcd = gcd(lcm, result);
+        result  /= gcd;
+        lcm /= gcd;
+        System.out.println(result + " " + lcm);
     }//main end
     // 유클리드 호제법으로 최대공약수를 구하는 메소드 >> 가장 기본적인 형태의 구현방식
     public static int gcd(int a, int b) {

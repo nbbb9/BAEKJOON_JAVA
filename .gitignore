@@ -48,6 +48,9 @@ cmake-build-*/
 
 # IntelliJ
 out/
+.idea
+.DS_Store
+BAEKJOON_JAVA.iml
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

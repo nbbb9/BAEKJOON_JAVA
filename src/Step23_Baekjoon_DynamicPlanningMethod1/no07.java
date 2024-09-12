@@ -9,11 +9,8 @@ public class no07 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
-
         int n = Integer.parseInt(br.readLine());
-
         int[] sum = new int[n];
-
 
 
 

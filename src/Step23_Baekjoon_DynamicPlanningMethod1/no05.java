@@ -20,7 +20,7 @@ public class no05 {
         //초기값 설정
         temp[0] = array[0];
         int maxSum = temp[0];
-        for(int i = 1 ; i < n ; i++){//이해가 안됨.
+        for(int i = 1 ; i < n ; i++){
             temp[i] = Math.max(array[i], temp[i-1] + array[i]);
             maxSum = Math.max(maxSum, temp[i]);
         }//for end
